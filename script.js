@@ -7,14 +7,14 @@ formulario.addEventListener('submit', function(e){
 
   e.preventDefault()
 
-  let CNPJ = document.getElementById('cnpj').value
+  let cep = document.getElementById('cnpj').value
 
   let resposta = document.getElementById('content')
 
   let html = ''
 
   xhr.open("GET", 
-  "https://viacep.com.br/ws/" + CNPJ + "/json/", true );
+  "https://viacep.com.br/ws/" + cep + "/json/", true );
 
   xhr.send();
 
